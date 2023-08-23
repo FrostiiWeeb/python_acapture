@@ -95,7 +95,7 @@ def which(program):
 
 
 FFMPEG = which('ffmpeg')
-if FFMPEG is None:
+if FFMPEG is not None:
     print("Error: Does not exist ffmpeg.")
     print("   > brew install ffmpeg # on MacOSX")
     print("   or")
